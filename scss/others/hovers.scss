@@ -1,0 +1,9 @@
+body.desktop{
+	a{
+		&:hover{
+			opacity: 0.4;
+		}
+		opacity: 1;
+		transition: opacity 600ms $ease-OutExpo 0ms;
+	}
+}

@@ -1,0 +1,47 @@
+// Smooth Fonts
+
+html, body {
+	@include font-smooth();
+}
+
+*{
+	::selection {
+		background: #1d87bd; /* WebKit/Blink Browsers */
+		color: white;
+	}
+	::-moz-selection {
+		background: #1d87bd; /* Gecko Browsers */
+		color: white;
+	}
+}
+
+
+// Prevent select
+
+*:not(input):not(textarea) {
+	touch-callout: none;
+	user-select: none;
+}
+
+// Hack imgs
+
+img {
+	// backface-visibility:hidden;
+	transform: translate3d(0, 0, 0);
+	display:block;
+	pointer-events:none;
+}
+
+a{
+	display: block;
+}
+
+// reset videos
+
+video{
+	 display: block;
+}
+
+// tel on divices
+
+a[href^=tel]:link { color:#FFF; }

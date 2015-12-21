@@ -1,0 +1,867 @@
+/* line 5, ../scss/utils/adjusting/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, ../scss/utils/adjusting/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 30, ../scss/utils/adjusting/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 33, ../scss/utils/adjusting/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 36, ../scss/utils/adjusting/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 39, ../scss/utils/adjusting/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, ../scss/utils/adjusting/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 48, ../scss/utils/adjusting/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 54, ../scss/utils/adjusting/_reset.scss */
+input, input, textarea, button, select {
+  -webkit-appearance: none;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  border: none;
+}
+
+/* line 62, ../scss/utils/adjusting/_reset.scss */
+button {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  line-height: normal;
+  list-style: none outside none;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  width: auto;
+  cursor: pointer;
+}
+
+/* line 83, ../scss/utils/adjusting/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 89, ../scss/utils/adjusting/_reset.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 92, ../scss/utils/adjusting/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/* line 95, ../scss/utils/adjusting/_reset.scss */
+.right {
+  float: right;
+}
+
+/* line 98, ../scss/utils/adjusting/_reset.scss */
+.left {
+  float: left;
+}
+
+/* line 101, ../scss/utils/adjusting/_reset.scss */
+.displayNone {
+  display: none !important;
+}
+
+/* line 104, ../scss/utils/adjusting/_reset.scss */
+.displayBlock {
+  display: block !important;
+}
+
+/* line 3, ../scss/utils/adjusting/_overlay.scss */
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 8, ../scss/utils/adjusting/_overlay.scss */
+* ::selection {
+  background: #1d87bd;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+/* line 12, ../scss/utils/adjusting/_overlay.scss */
+* ::-moz-selection {
+  background: #1d87bd;
+  /* Gecko Browsers */
+  color: white;
+}
+
+/* line 21, ../scss/utils/adjusting/_overlay.scss */
+*:not(input):not(textarea) {
+  touch-callout: none;
+  user-select: none;
+}
+
+/* line 28, ../scss/utils/adjusting/_overlay.scss */
+img {
+  transform: translate3d(0, 0, 0);
+  display: block;
+  pointer-events: none;
+}
+
+/* line 35, ../scss/utils/adjusting/_overlay.scss */
+a {
+  display: block;
+}
+
+/* line 41, ../scss/utils/adjusting/_overlay.scss */
+video {
+  display: block;
+}
+
+/* line 47, ../scss/utils/adjusting/_overlay.scss */
+a[href^=tel]:link {
+  color: #FFF;
+}
+
+/*$fontSize: 10px;
+$fontSizeSml: 12px;
+$fontSizeMed: 14px;
+$fontSizeWide: 14px;*/
+/*$extralight: 100;
+$light: 200;
+$book: 400;
+$medium: 500;
+$bold: 700;
+$black: 800;*/
+/* ProximaNova */
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Black/ProximaNova-Black.eot");
+  src: url("../fonts/ProximaNova-Black/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Black/ProximaNova-Black.woff") format("woff"), url("../fonts/ProximaNova-Black/ProximaNova-Black.ttf") format("truetype"), url("../fonts/ProximaNova-Black/ProximaNova-Black.svg") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.eot");
+  src: url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.woff") format("woff"), url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.ttf") format("truetype"), url("../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Light/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova-Light/ProximaNova-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+/*$size-mobile: "only screen and (min-device-width : 320px) and (max-device-width : 700px)";*/
+/*$size-mobile-paysage: "only screen and (orientation: landscape) and (max-device-width : 700px)";*/
+/*$size-phablet: "only screen and (min-device-width : 480px) and (max-device-width : 767px)";*/
+/*$size-tablet: "only screen and (min-device-width : 700px) and (max-device-width : 1024px)";*/
+/*$size-tablet-portrait: "only screen and (orientation: portrait) and (max-device-width : 768px)";*/
+/*$size-desktop: "only screen and (min-width : 1025px)";*/
+/*$size-big-desktop: "only screen and (min-width : 1680px)";*/
+/*$size-height-730: "(max-height : 730px)";*/
+/*$size-height-768: "(max-height : 768px)";*/
+/*$size-height-850: "(max-height : 850px)";*/
+/* line 3, ../scss/parts/common.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 7, ../scss/parts/common.scss */
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+/* line 13, ../scss/parts/common.scss */
+html, body {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  width: 100%;
+  height: 100%;
+  /*@include skew(25,10);
+  @include transition(all 300ms $ease-InOutQuad 0ms);*/
+}
+
+/* line 25, ../scss/parts/common.scss */
+body {
+  /*&.ipadIos7{
+  	position:absolute;
+  	bottom:20px;
+  	height:672px !important;
+  }*/
+}
+/* line 33, ../scss/parts/common.scss */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* line 39, ../scss/parts/common.scss */
+button:focus {
+  outline: 0;
+}
+
+/* line 45, ../scss/parts/common.scss */
+input:focus {
+  outline: 0;
+}
+
+/* line 50, ../scss/parts/common.scss */
+.content {
+  	/*width:100%;
+  	max-width:1170px;
+  	margin:0 auto;
+  
+  	@include screen($size-width-1170){
+  		padding:0 40px;
+  	}
+  	@include screen($size-mobile){
+  		padding:0 20px;
+  	}*/
+}
+
+/* line 62, ../scss/parts/common.scss */
+.section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 84, ../scss/parts/common.scss */
+.btn {
+  padding: 24px 31px;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid #FFFFFF;
+}
+
+/* line 93, ../scss/parts/common.scss */
+.btn-cta {
+  display: inline-block;
+  vertical-align: top;
+  padding: 22px 30px;
+  z-index: 100;
+  font-size: 0;
+  background: #ffa676;
+  background: -moz-linear-gradient(top, #ffa676 0%, #ea6721 100%);
+  background: -webkit-linear-gradient(top, #ffa676 0%, #ea6721 100%);
+  background: linear-gradient(to bottom, #ffa676 0%, #ea6721 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa676', endColorstr='#ea6721',GradientType=0 );
+}
+/* line 108, ../scss/parts/common.scss */
+.btn-cta svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  margin-right: 14px;
+  fill: #FFFFFF;
+  pointer-events: none;
+}
+/* line 116, ../scss/parts/common.scss */
+.btn-cta span {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  pointer-events: none;
+  overflow: hidden;
+  /*width:0;*/
+  /*@include transition(all 300ms $ease-InOutQuad 0ms);*/
+}
+/* line 132, ../scss/parts/common.scss */
+.btn-cta:hover {
+  /*span{
+  	width:auto;
+  }*/
+}
+
+/* line 138, ../scss/parts/common.scss */
+button.btn-cta {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 145, ../scss/parts/common.scss */
+a.btn-cta {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 150, ../scss/parts/common.scss */
+.vertical-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 156, ../scss/parts/common.scss */
+.background-text {
+  max-width: 1236px;
+  font-weight: 800;
+  font-size: 140px;
+  color: #FFFFFF;
+  opacity: 0.1;
+}
+
+/* line 1, ../scss/parts/loader/loader.scss */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+  z-index: 1000;
+  text-align: center;
+  display: none;
+}
+/* line 11, ../scss/parts/loader/loader.scss */
+#loader .loader-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 16, ../scss/parts/loader/loader.scss */
+#loader .loader-content h2 {
+  font-weight: 800;
+  font-size: 140px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* line 22, ../scss/parts/loader/loader.scss */
+#loader .loader-content h2.back {
+  display: inline-block;
+  color: #e5e5e5;
+}
+/* line 26, ../scss/parts/loader/loader.scss */
+#loader .loader-content h2.load {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  color: #666666;
+  overflow: hidden;
+}
+/* line 33, ../scss/parts/loader/loader.scss */
+#loader .loader-content h2.load span {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* line 1, ../scss/parts/video-iframe/video-iframe.scss */
+#video-iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  z-index: 500;
+  display: none;
+}
+/* line 10, ../scss/parts/video-iframe/video-iframe.scss */
+#video-iframe iframe {
+  width: 100%;
+  height: 100%;
+}
+/* line 15, ../scss/parts/video-iframe/video-iframe.scss */
+#video-iframe .btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+/* line 1, ../scss/parts/pre-order/pre-order.scss */
+.pre-order-btn {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+
+/* line 6, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup {
+  position: fixed;
+  z-index: 200;
+  background-color: #FFFFFF;
+  display: none;
+}
+/* line 13, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup #pre-order-btn-close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 25px;
+}
+/* line 18, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup #pre-order-btn-close i {
+  font-size: 16px;
+  line-height: 0.7;
+}
+/* line 24, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup .vertical-align {
+  padding-left: 18%;
+}
+/* line 27, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup .vertical-align .image {
+  position: relative;
+  display: block;
+  width: 450px;
+  height: 561px;
+  background: url(../images/background-product.jpg) no-repeat center;
+  background-size: cover;
+}
+/* line 34, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup .vertical-align .image .mask {
+  position: absolute;
+  width: 400px;
+  height: 511px;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+}
+/* line 43, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup .vertical-align .text-content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: 35%;
+  font-size: 0;
+}
+/* line 50, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup .vertical-align .text-content h3 {
+  margin-bottom: 45px;
+  font-weight: 800;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #153f68;
+}
+/* line 57, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup .vertical-align .text-content p {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ea6721;
+}
+/* line 63, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup .vertical-align .text-content .btn-cta {
+  margin: 45px 20px 0 0;
+}
+/* line 69, ../scss/parts/pre-order/pre-order.scss */
+#pre-order-popup.display {
+  display: block;
+}
+
+/* line 1, ../scss/parts/nav/nav.scss */
+nav {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+/* line 7, ../scss/parts/nav/nav.scss */
+nav ul {
+  padding-left: 85px;
+}
+/* line 10, ../scss/parts/nav/nav.scss */
+nav ul li {
+  position: relative;
+  margin: 16px 0;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: transparent;
+  cursor: pointer;
+  /*@include transition(all 300ms $ease-InOutQuad 0ms);*/
+}
+/* line 21, ../scss/parts/nav/nav.scss */
+nav ul li:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  right: calc(100% + 15px);
+  top: 50%;
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background-color: #FFFFFF;
+  /*@include transition(all 300ms $ease-InOutQuad 0ms);*/
+}
+/* line 32, ../scss/parts/nav/nav.scss */
+nav ul li.active {
+  color: #ea6721;
+}
+/* line 35, ../scss/parts/nav/nav.scss */
+nav ul li.active:before {
+  width: 70px;
+  background-color: #ea6721;
+}
+
+/* line 1, ../scss/parts/presentation/presentation.scss */
+#presentation {
+  padding-top: 50px;
+  background: url("../images/background-presentation.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+/* line 7, ../scss/parts/presentation/presentation.scss */
+#presentation:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 0;
+}
+/* line 17, ../scss/parts/presentation/presentation.scss */
+#presentation #logo {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+/* line 23, ../scss/parts/presentation/presentation.scss */
+#presentation .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -moz-transform: translate(-50%, -44px);
+  -o-transform: translate(-50%, -44px);
+  -ms-transform: translate(-50%, -44px);
+  -webkit-transform: translate(-50%, -44px);
+  transform: translate(-50%, -44px);
+}
+/* line 29, ../scss/parts/presentation/presentation.scss */
+#presentation .content p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+/* line 36, ../scss/parts/presentation/presentation.scss */
+#presentation .content .btn {
+  margin-top: 42px;
+}
+/* line 41, ../scss/parts/presentation/presentation.scss */
+#presentation .scroll-to {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 42px;
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/* line 51, ../scss/parts/presentation/presentation.scss */
+#presentation .scroll-to:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #FFFFFF;
+  border-width: 4px;
+  margin-left: -4px;
+}
+
+/* line 1, ../scss/parts/product/product.scss */
+#product {
+  background: url("../images/background-product.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 7, ../scss/parts/product/product.scss */
+#product:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/background-product.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+/* line 22, ../scss/parts/product/product.scss */
+#product:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* line 1, ../scss/parts/contact/contact.scss */
+#contact {
+  background-color: #ededed;
+  text-align: center;
+}
+/* line 5, ../scss/parts/contact/contact.scss */
+#contact .background-text {
+  color: #000000;
+  opacity: 0.03;
+}
+/* line 10, ../scss/parts/contact/contact.scss */
+#contact form {
+  width: 800px;
+  font-size: 0;
+}
+/* line 14, ../scss/parts/contact/contact.scss */
+#contact form input, #contact form select, #contact form textarea {
+  width: 49%;
+  padding: 35px 30px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666666;
+  border: 1px solid #d5d5d5;
+}
+/* line 22, ../scss/parts/contact/contact.scss */
+#contact form input::-webkit-input-placeholder, #contact form select::-webkit-input-placeholder, #contact form textarea::-webkit-input-placeholder {
+  color: #666666;
+}
+/* line 25, ../scss/parts/contact/contact.scss */
+#contact form input:-moz-placeholder, #contact form select:-moz-placeholder, #contact form textarea:-moz-placeholder {
+  color: #666666;
+}
+/* line 28, ../scss/parts/contact/contact.scss */
+#contact form input::-moz-placeholder, #contact form select::-moz-placeholder, #contact form textarea::-moz-placeholder {
+  padding-top: 70px;
+}
+/* line 31, ../scss/parts/contact/contact.scss */
+#contact form input:-ms-input-placeholder, #contact form select:-ms-input-placeholder, #contact form textarea:-ms-input-placeholder {
+  color: #666666;
+}
+/* line 35, ../scss/parts/contact/contact.scss */
+#contact form input:nth-child(2n), #contact form select:nth-child(2n), #contact form textarea:nth-child(2n) {
+  margin-left: 2%;
+}
+/* line 39, ../scss/parts/contact/contact.scss */
+#contact form select {
+  position: relative;
+  background: url(../images/select-arrow.png) no-repeat right center;
+}
+/* line 43, ../scss/parts/contact/contact.scss */
+#contact form textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+}
+/* line 48, ../scss/parts/contact/contact.scss */
+#contact form .type-submit {
+  position: relative;
+}
+/* line 51, ../scss/parts/contact/contact.scss */
+#contact form .type-submit input[type='submit'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  z-index: 10;
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+  margin-bottom: 0;
+  opacity: 0;
+  color: transparent;
+}
+/* line 65, ../scss/parts/contact/contact.scss */
+#contact .social {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+/* line 70, ../scss/parts/contact/contact.scss */
+#contact .social li {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 25px 0;
+}
+/* line 75, ../scss/parts/contact/contact.scss */
+#contact .social li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #b2b2b2;
+  font-size: 30px;
+}
+/* line 82, ../scss/parts/contact/contact.scss */
+#contact .social li a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 91, ../scss/parts/contact/contact.scss */
+#contact .copyright {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* line 2, ../scss/others/hovers.scss */
+body.desktop a {
+  opacity: 1;
+  transition: opacity 600ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+}
+/* line 3, ../scss/others/hovers.scss */
+body.desktop a:hover {
+  opacity: 0.4;
+}

@@ -1,0 +1,6 @@
+footer{
+
+	@include screen($size-tablet){}
+	@include screen($size-mobile){}
+
+}

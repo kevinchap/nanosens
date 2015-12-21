@@ -1,0 +1,31 @@
+#product{
+	background:url('../images/background-product.jpg') no-repeat center;
+	background-size:cover;
+	text-align:center;
+	overflow:hidden;
+
+	&:before{
+		content:'';
+		position:absolute;
+		top:0;left:0;
+		width:100%;height:100%;
+		background:url('../images/background-product.jpg') no-repeat center;
+		background-size:cover;
+
+		-webkit-filter: blur(5px);
+		-moz-filter: blur(5px);
+		-o-filter: blur(5px);
+		-ms-filter: blur(5px);
+		filter: blur(5px);
+	}
+
+	&:after{
+		content:'';
+		position:absolute;
+		top:0;left:0;
+		width:100%;height:100%;
+		background-color:#000;
+		opacity:0.7;
+		z-index:0;
+	}
+}

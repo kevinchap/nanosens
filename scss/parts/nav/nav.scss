@@ -1,0 +1,42 @@
+nav{
+	position:fixed;
+	left:0;top:50%;
+	@include translate(0,-50%);
+	z-index:1;
+
+	ul{
+		padding-left:85px;
+
+		li{
+			position:relative;
+			margin:16px 0;
+			font-weight:600;
+			font-size:12px;
+			text-transform:uppercase;
+			color:transparent;
+			cursor:pointer;
+
+			/*@include transition(all 300ms $ease-InOutQuad 0ms);*/
+
+			&:before{
+				content:'';
+				position:absolute;
+				width:20px;height:1px;
+				right:calc(100% + 15px);top:50%;
+				@include translate(0,-50%);
+				background-color:$color-white;
+
+				/*@include transition(all 300ms $ease-InOutQuad 0ms);*/
+			}
+
+			&.active{
+				color:$color-orange;
+
+				&:before{
+					width:70px;
+					background-color:$color-orange;
+				}
+			}
+		}
+	}
+}

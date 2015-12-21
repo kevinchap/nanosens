@@ -1,0 +1,172 @@
+// -------------------------o Global
+
+*, *:before, *:after {
+	box-sizing:inherit;
+}
+
+html {
+	font-size:62.5%;
+	-webkit-font-smoothing:antialiased;
+	box-sizing:border-box;
+}
+
+html, body{
+	font-family:$font-proximanova;
+	font-weight:400;
+	font-size:16px;
+	color:$color-black;
+	width:100%;
+	height:100%;
+
+	/*@include skew(25,10);
+	@include transition(all 300ms $ease-InOutQuad 0ms);*/
+}
+
+body{
+	
+	/*&.ipadIos7{
+		position:absolute;
+		bottom:20px;
+		height:672px !important;
+	}*/
+
+	&.no-scroll{
+		overflow:hidden;
+	}
+}
+
+button{
+	&:focus{
+		outline: 0;
+	}
+}
+
+input{
+	&:focus{
+		outline: 0;
+	}
+}
+
+.content{
+	/*width:100%;
+	max-width:1170px;
+	margin:0 auto;
+
+	@include screen($size-width-1170){
+		padding:0 40px;
+	}
+	@include screen($size-mobile){
+		padding:0 20px;
+	}*/
+}
+.section{
+	position:relative;
+	width:100%;height:100%;
+}
+a{
+
+}
+h1{
+
+}
+h2{
+	
+}
+h3{
+	
+}
+h4{
+	
+}
+p{
+	
+}
+.btn{
+	padding:24px 31px;
+	font-weight:800;
+	font-size:12px;
+	text-transform:uppercase;
+	color:$color-white;
+	background-color:rgba(255,255,255,0.15);
+	border:1px solid $color-white;
+}
+.btn-cta{
+	display:inline-block;
+	vertical-align:top;
+
+	padding:22px 30px;
+
+	z-index:100;
+	font-size:0;
+
+	background: #ffa676;
+	background: -moz-linear-gradient(top,  #ffa676 0%, #ea6721 100%);
+	background: -webkit-linear-gradient(top,  #ffa676 0%,#ea6721 100%);
+	background: linear-gradient(to bottom,  #ffa676 0%,#ea6721 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa676', endColorstr='#ea6721',GradientType=0 );
+
+	svg{
+		display:inline-block;
+		vertical-align:middle;
+		width:16px;height:16px;
+		margin-right:14px;
+		fill:$color-white;
+		pointer-events:none;
+	}
+	span{
+		display:inline-block;
+		vertical-align:middle;
+		font-weight:800;
+		font-size:12px;
+		text-transform:uppercase;
+		color:$color-white;
+		pointer-events:none;
+
+		overflow:hidden;
+
+		/*width:0;*/
+
+		/*@include transition(all 300ms $ease-InOutQuad 0ms);*/
+	}
+
+	&:hover{
+		/*span{
+			width:auto;
+		}*/
+	}
+}
+button.btn-cta{
+	font-family:$font-proximanova;
+	font-weight:800;
+	font-size:12px;
+	text-transform:uppercase;
+	color:$color-white;
+}
+a.btn-cta{
+	display:inline-block;
+	vertical-align:top;
+}
+
+.vertical-align{
+	position:absolute;
+	top:50%;left:50%;width:100%;
+	@include translate(-50%,-50%);
+}
+
+.background-text{
+	max-width:1236px;
+	font-weight:800;
+	font-size:140px;
+	color:$color-white;
+	opacity:0.1;
+}
+
+@include screen($size-tablet){
+	
+}
+
+@include screen($size-mobile){
+	
+}
+
+

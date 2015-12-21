@@ -1,0 +1,63 @@
+/*
+Error: Undefined mixin 'importFont'.
+        on line 25 of /Sites/nanosens/scss/others/variables.scss, in `importFont'
+        from line 25 of /Sites/nanosens/scss/others/variables.scss
+
+20: $black: 800;*\/
+21: 
+22: // -------------------------o Imports fonts
+23: 
+24: /* ProximaNova *\/
+25: @include importFont('ProximaNova', 'ProximaNova-Black', 800, normal, $path-font + 'ProximaNova-Black');
+26: 
+27: @include importFont('ProximaNova', 'ProximaNova-Extrabold', 700, normal, $path-font + 'ProximaNova-Extrabold');
+28: 
+29: @include importFont('ProximaNova', 'ProximaNova-Bold', 600, normal, $path-font + 'ProximaNova-Bold');
+30: 
+
+Backtrace:
+/Sites/nanosens/scss/others/variables.scss:25:in `importFont'
+/Sites/nanosens/scss/others/variables.scss:25
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/root_node.rb:20:in `render'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/kevinchapron/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'importFont'.\A         on line 25 of /Sites/nanosens/scss/others/variables.scss, in `importFont'\A         from line 25 of /Sites/nanosens/scss/others/variables.scss\A \A 20: $black: 800;*/\A 21: \A 22: // -------------------------o Imports fonts\A 23: \A 24: /* ProximaNova */\A 25: @include importFont('ProximaNova', 'ProximaNova-Black', 800, normal, $path-font + 'ProximaNova-Black');\A 26: \A 27: @include importFont('ProximaNova', 'ProximaNova-Extrabold', 700, normal, $path-font + 'ProximaNova-Extrabold');\A 28: \A 29: @include importFont('ProximaNova', 'ProximaNova-Bold', 600, normal, $path-font + 'ProximaNova-Bold');\A 30: "; }
