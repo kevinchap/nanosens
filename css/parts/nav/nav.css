@@ -3,7 +3,7 @@ Error: Undefined mixin 'translate'.
         on line 4 of /Sites/nanosens/scss/parts/nav/nav.scss, in `translate'
         from line 4 of /Sites/nanosens/scss/parts/nav/nav.scss
 
-1: nav{
+1: #slide-nav{
 2: 	position:fixed;
 3: 	left:0;top:50%;
 4: 	@include translate(0,-50%);
@@ -69,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'translate'.\A         on line 4 of /Sites/nanosens/scss/parts/nav/nav.scss, in `translate'\A         from line 4 of /Sites/nanosens/scss/parts/nav/nav.scss\A \A 1: nav{\A 2: 	position:fixed;\A 3: 	left:0;top:50%;\A 4: 	@include translate(0,-50%);\A 5: 	z-index:1;\A 6: \A 7: 	ul{\A 8: 		padding-left:85px;\A 9: "; }
+  content: "Error: Undefined mixin 'translate'.\A         on line 4 of /Sites/nanosens/scss/parts/nav/nav.scss, in `translate'\A         from line 4 of /Sites/nanosens/scss/parts/nav/nav.scss\A \A 1: #slide-nav{\A 2: 	position:fixed;\A 3: 	left:0;top:50%;\A 4: 	@include translate(0,-50%);\A 5: 	z-index:1;\A 6: \A 7: 	ul{\A 8: 		padding-left:85px;\A 9: "; }

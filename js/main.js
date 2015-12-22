@@ -101,7 +101,12 @@ module.exports = function( options ) {
 
 	var container = document.querySelector( options.selectorContainer );
 	var items = document.querySelectorAll( options.itemsSelector );
+	items[0].classList.add( 'selected' );
 	var nbItems = items.length;
+	if( options.navSelector ){
+		var navItems = document.querySelectorAll( options.navSelector + ' li' );
+		navItems[0].classList.add( 'selected' );
+	}
 
 	this.delta = 0;
 	this.scrollDelta = 0;
@@ -321,11 +326,14 @@ module.exports = function( options ) {
 	}
 
 	function force() {
-		// console.log( _this.slideDelta * _this.currentSlide );
 		_this.moveTarget = _this.slideDelta * _this.currentSlide;
 
-		// items[ this.previousSlide ].classList.remove( 'selected' );
-		// items[ this.currentSlide ].classList.add( 'selected' );
+		items[ _this.previousSlide ].classList.remove( 'selected' );
+		items[ _this.currentSlide ].classList.add( 'selected' );
+
+		navItems[ _this.previousSlide ].classList.remove( 'selected' );
+		navItems[ _this.currentSlide ].classList.add( 'selected' );
+
 	}
 
 	this.renderSlide = function() {
@@ -489,7 +497,8 @@ function init() {
 	var slideSection = new Slide({
 		selectorContainer: '#content',
 		itemsSelector: '.slide-section',
-		orientation: 'vertical'
+		orientation: 'vertical',
+		navSelector: '#slide-nav'
 	});
 
 }

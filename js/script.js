@@ -46,7 +46,8 @@ function init() {
 	var slideSection = new Slide({
 		selectorContainer: '#content',
 		itemsSelector: '.slide-section',
-		orientation: 'vertical'
+		orientation: 'vertical',
+		navSelector: '#slide-nav'
 	});
 
 }

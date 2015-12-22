@@ -1,4 +1,4 @@
-nav{
+#slide-nav{
 	position:fixed;
 	left:0;top:50%;
 	@include translate(0,-50%);
@@ -16,7 +16,7 @@ nav{
 			color:transparent;
 			cursor:pointer;
 
-			/*@include transition(all 300ms $ease-InOutQuad 0ms);*/
+			@include transition(all 300ms $ease-InOutQuad 0ms);
 
 			&:before{
 				content:'';
@@ -26,10 +26,10 @@ nav{
 				@include translate(0,-50%);
 				background-color:$color-white;
 
-				/*@include transition(all 300ms $ease-InOutQuad 0ms);*/
+				@include transition(all 300ms $ease-InOutQuad 0ms);
 			}
 
-			&.active{
+			&.selected{
 				color:$color-orange;
 
 				&:before{
