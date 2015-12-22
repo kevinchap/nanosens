@@ -15,7 +15,7 @@
 			<h3>february 2016</h3>
 			<p>You have until that date to pre-order your device and support<br/>us in our campaign crownfunding.<br/><br/>Visit us at CES in Las Vegas from January 6 to 9, 2016</p>
 			<button class="btn-cta">
-				<span>More-informations</span>
+				<span>More informations</span>
 			</button>
 			<a href="#" class="btn-cta">
 				<span>Pre-order</span>

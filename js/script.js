@@ -1,7 +1,8 @@
 "use strict";
 
-var Utils = require('./modules/utils');
+// var Utils = require('./modules/utils');
 var Popup = require('./modules/popup');
+var Slide = require('./modules/slide');
 
 function ready(fn) {
 	if (document.readyState != 'loading'){
@@ -12,53 +13,41 @@ function ready(fn) {
 }
 
 function init() {
-	
-	// pre-order animation
-	document.getElementById( 'pre-order-btn' ).addEventListener( 'click', openOrClosePreorder );
-	document.getElementById( 'pre-order-btn-close' ).addEventListener( 'click', openOrClosePreorder );
+
+	// popup pre order
+	var popupPreOrder = new Popup( {
+		selectorBtnOpen: '#pre-order-btn',
+		selectorContainer: '#pre-order-popup',
+		selectorBtnClose: '#pre-order-btn-close',
+		classToAdd: 'display'
+	} );
+	popupPreOrder.init();
 
 
-	// var options1 = {
-	// 	name: 'Max',
-	// 	lastname: 'Chap'
-	// };
+	// popup video
+	var popupVideo = new Popup( {
+		selectorBtnOpen: '#video-popup-btn',
+		selectorContainer: '#video-iframe',
+		selectorBtnClose: '#video-popup-btn-close',
+		classToAdd: 'display'
+	} );
 
-	// var popup1 = new Popup( options1 );
+	popupVideo.init();
 
-	// var options2 = {
-	// 	name: 'Kev',
-	// 	lastname: 'Chapipo'
-	// };
+	document.addEventListener( popupVideo.nameOpenEvent, function (e) {
+		document.querySelector( '#video-iframe iframe' ).src = document.getElementById( 'video-iframe' ).getAttribute( 'data-src' );
+	}, false);
 
-	// var popup2 = new Popup( options2 );
-	
-}
+	document.addEventListener( popupVideo.nameCloseEvent, function (e) {
+		document.querySelector( '#video-iframe iframe' ).src = '';
+	}, false);
 
-function openOrClosePreorder() {
-
-	var openAttribute = !( typeof this.getAttribute( 'data-open' ) === 'undefined' ) && !( this.getAttribute( 'data-open' ) === null );
-
-	var popup = document.getElementById( 'pre-order-popup' );
-
-	var whichClass = 'display';
-
-	var hasClass = Utils.hasClass( popup, whichClass );
-
-	if( !hasClass && openAttribute ){
-
-		document.body.classList.add( 'no-scroll' );
-
-		popup.classList.add( whichClass );
-
-	}
-
-	if( hasClass && !openAttribute ){
-
-		document.body.classList.remove( 'no-scroll' );
-
-		popup.classList.remove( whichClass );
-
-	}
+	// slide section
+	var slideSection = new Slide({
+		selectorContainer: '#content',
+		itemsSelector: '.slide-section',
+		orientation: 'vertical'
+	});
 
 }
 

@@ -23,6 +23,8 @@ html, body{
 }
 
 body{
+
+	overflow:hidden;
 	
 	/*&.ipadIos7{
 		position:absolute;
@@ -30,9 +32,9 @@ body{
 		height:672px !important;
 	}*/
 
-	&.no-scroll{
+	/*&.no-scroll{
 		overflow:hidden;
-	}
+	}*/
 }
 
 button{
@@ -82,7 +84,7 @@ p{
 	
 }
 .btn{
-	padding:24px 31px;
+	padding:22px 30px;
 	font-weight:800;
 	font-size:12px;
 	text-transform:uppercase;
@@ -156,7 +158,8 @@ a.btn-cta{
 .background-text{
 	max-width:1236px;
 	font-weight:800;
-	font-size:140px;
+	font-size:120px;
+	text-transform:uppercase;
 	color:$color-white;
 	opacity:0.1;
 }

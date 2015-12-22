@@ -266,28 +266,28 @@ html, body {
 
 /* line 25, ../scss/parts/common.scss */
 body {
+  overflow: hidden;
   /*&.ipadIos7{
   	position:absolute;
   	bottom:20px;
   	height:672px !important;
   }*/
-}
-/* line 33, ../scss/parts/common.scss */
-body.no-scroll {
-  overflow: hidden;
+  /*&.no-scroll{
+  	overflow:hidden;
+  }*/
 }
 
-/* line 39, ../scss/parts/common.scss */
+/* line 41, ../scss/parts/common.scss */
 button:focus {
   outline: 0;
 }
 
-/* line 45, ../scss/parts/common.scss */
+/* line 47, ../scss/parts/common.scss */
 input:focus {
   outline: 0;
 }
 
-/* line 50, ../scss/parts/common.scss */
+/* line 52, ../scss/parts/common.scss */
 .content {
   	/*width:100%;
   	max-width:1170px;
@@ -301,16 +301,16 @@ input:focus {
   	}*/
 }
 
-/* line 62, ../scss/parts/common.scss */
+/* line 64, ../scss/parts/common.scss */
 .section {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-/* line 84, ../scss/parts/common.scss */
+/* line 86, ../scss/parts/common.scss */
 .btn {
-  padding: 24px 31px;
+  padding: 22px 30px;
   font-weight: 800;
   font-size: 12px;
   text-transform: uppercase;
@@ -319,7 +319,7 @@ input:focus {
   border: 1px solid #FFFFFF;
 }
 
-/* line 93, ../scss/parts/common.scss */
+/* line 95, ../scss/parts/common.scss */
 .btn-cta {
   display: inline-block;
   vertical-align: top;
@@ -332,7 +332,7 @@ input:focus {
   background: linear-gradient(to bottom, #ffa676 0%, #ea6721 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa676', endColorstr='#ea6721',GradientType=0 );
 }
-/* line 108, ../scss/parts/common.scss */
+/* line 110, ../scss/parts/common.scss */
 .btn-cta svg {
   display: inline-block;
   vertical-align: middle;
@@ -342,7 +342,7 @@ input:focus {
   fill: #FFFFFF;
   pointer-events: none;
 }
-/* line 116, ../scss/parts/common.scss */
+/* line 118, ../scss/parts/common.scss */
 .btn-cta span {
   display: inline-block;
   vertical-align: middle;
@@ -355,14 +355,14 @@ input:focus {
   /*width:0;*/
   /*@include transition(all 300ms $ease-InOutQuad 0ms);*/
 }
-/* line 132, ../scss/parts/common.scss */
+/* line 134, ../scss/parts/common.scss */
 .btn-cta:hover {
   /*span{
   	width:auto;
   }*/
 }
 
-/* line 138, ../scss/parts/common.scss */
+/* line 140, ../scss/parts/common.scss */
 button.btn-cta {
   font-family: "ProximaNova", "Arial", sans-serif;
   font-weight: 800;
@@ -371,13 +371,13 @@ button.btn-cta {
   color: #FFFFFF;
 }
 
-/* line 145, ../scss/parts/common.scss */
+/* line 147, ../scss/parts/common.scss */
 a.btn-cta {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 150, ../scss/parts/common.scss */
+/* line 152, ../scss/parts/common.scss */
 .vertical-align {
   position: absolute;
   top: 50%;
@@ -390,11 +390,12 @@ a.btn-cta {
   transform: translate(-50%, -50%);
 }
 
-/* line 156, ../scss/parts/common.scss */
+/* line 158, ../scss/parts/common.scss */
 .background-text {
   max-width: 1236px;
   font-weight: 800;
-  font-size: 140px;
+  font-size: 120px;
+  text-transform: uppercase;
   color: #FFFFFF;
   opacity: 0.1;
 }
@@ -472,6 +473,10 @@ a.btn-cta {
   top: 50px;
   right: 50px;
 }
+/* line 20, ../scss/parts/video-iframe/video-iframe.scss */
+#video-iframe.display {
+  display: block;
+}
 
 /* line 1, ../scss/parts/pre-order/pre-order.scss */
 .pre-order-btn {
@@ -501,7 +506,7 @@ a.btn-cta {
 }
 /* line 24, ../scss/parts/pre-order/pre-order.scss */
 #pre-order-popup .vertical-align {
-  padding-left: 18%;
+  padding-left: 11%;
 }
 /* line 27, ../scss/parts/pre-order/pre-order.scss */
 #pre-order-popup .vertical-align .image {
@@ -529,17 +534,16 @@ a.btn-cta {
 /* line 43, ../scss/parts/pre-order/pre-order.scss */
 #pre-order-popup .vertical-align .text-content {
   position: absolute;
-  left: 0;
+  left: 28%;
   top: 50%;
   -moz-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  left: 35%;
   font-size: 0;
 }
-/* line 50, ../scss/parts/pre-order/pre-order.scss */
+/* line 49, ../scss/parts/pre-order/pre-order.scss */
 #pre-order-popup .vertical-align .text-content h3 {
   margin-bottom: 45px;
   font-weight: 800;
@@ -547,18 +551,18 @@ a.btn-cta {
   text-transform: uppercase;
   color: #153f68;
 }
-/* line 57, ../scss/parts/pre-order/pre-order.scss */
+/* line 56, ../scss/parts/pre-order/pre-order.scss */
 #pre-order-popup .vertical-align .text-content p {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   color: #ea6721;
 }
-/* line 63, ../scss/parts/pre-order/pre-order.scss */
+/* line 62, ../scss/parts/pre-order/pre-order.scss */
 #pre-order-popup .vertical-align .text-content .btn-cta {
   margin: 45px 20px 0 0;
 }
-/* line 69, ../scss/parts/pre-order/pre-order.scss */
+/* line 68, ../scss/parts/pre-order/pre-order.scss */
 #pre-order-popup.display {
   display: block;
 }
@@ -712,11 +716,11 @@ nav ul li.active:before {
   height: 100%;
   background: url("../images/background-product.jpg") no-repeat center;
   background-size: cover;
-  -webkit-filter: blur(5px);
+  /*-webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  filter: blur(5px);
+  filter: blur(5px);*/
 }
 /* line 22, ../scss/parts/product/product.scss */
 #product:after {
@@ -749,7 +753,7 @@ nav ul li.active:before {
 /* line 14, ../scss/parts/contact/contact.scss */
 #contact form input, #contact form select, #contact form textarea {
   width: 49%;
-  padding: 35px 30px;
+  padding: 30px;
   margin-bottom: 20px;
   font-size: 14px;
   color: #666666;
@@ -831,7 +835,7 @@ nav ul li.active:before {
   width: 100%;
   height: 100%;
   color: #b2b2b2;
-  font-size: 30px;
+  font-size: 20px;
 }
 /* line 82, ../scss/parts/contact/contact.scss */
 #contact .social li a i {
@@ -847,11 +851,11 @@ nav ul li.active:before {
 /* line 91, ../scss/parts/contact/contact.scss */
 #contact .copyright {
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left: 0;
   width: 100%;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
   color: #000000;
 }

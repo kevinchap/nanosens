@@ -1,4 +1,4 @@
-<section id="contact" class="section">
+<section id="contact" class="section slide-section">
 	<h3 class="vertical-align background-text">contact</h3>
 	<form class="vertical-align">
 		<input type="text" placeholder="Name - Firstname">

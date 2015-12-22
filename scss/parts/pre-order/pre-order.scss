@@ -22,7 +22,7 @@
 	}
 
 	.vertical-align{
-		padding-left:18%;
+		padding-left:11%;
 
 		.image{
 			position:relative;
@@ -42,9 +42,8 @@
 
 		.text-content{
 			position:absolute;
-			left:0;top:50%;
+			left:28%;top:50%;
 			@include translate(0,-50%);
-			left:35%;
 			font-size:0;
 
 			h3{

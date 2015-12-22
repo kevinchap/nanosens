@@ -16,6 +16,10 @@ module.exports = (function() {
 
 	};
 
+	self.createUniqueId = function() {
+		return '_' + Math.random().toString( 36 ).substr( 2, 16 );
+	};
+
 	return self;
 
 })();
