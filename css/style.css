@@ -734,6 +734,93 @@ nav ul li.active:before {
   opacity: 0.7;
   z-index: 0;
 }
+/* line 33, ../scss/parts/product/product.scss */
+#product #content-product .section {
+  z-index: 100;
+}
+/* line 36, ../scss/parts/product/product.scss */
+#product #content-product .section .point {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 42, ../scss/parts/product/product.scss */
+#product #content-product .section .point .number {
+  position: absolute;
+  font-size: 100px;
+  color: #0095d2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4acaff), to(#0095d2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 3;
+}
+/* line 52, ../scss/parts/product/product.scss */
+#product #content-product .section .point .big {
+  position: absolute;
+  z-index: 2;
+}
+/* line 56, ../scss/parts/product/product.scss */
+#product #content-product .section .point .small {
+  position: absolute;
+  z-index: 1;
+}
+/* line 60, ../scss/parts/product/product.scss */
+#product #content-product .section .point .text-content {
+  position: absolute;
+  z-index: 4;
+  text-align: left;
+}
+/* line 65, ../scss/parts/product/product.scss */
+#product #content-product .section .point .text-content h2 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+/* line 70, ../scss/parts/product/product.scss */
+#product #content-product .section .point .text-content ul {
+  margin-top: 30px;
+}
+/* line 73, ../scss/parts/product/product.scss */
+#product #content-product .section .point .text-content ul li {
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.65;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+/* line 81, ../scss/parts/product/product.scss */
+#product #content-product .section .point .text-content ul li strong {
+  font-weight: 700;
+}
+/* line 87, ../scss/parts/product/product.scss */
+#product #content-product .section .point .text-content:before {
+  content: '';
+  position: absolute;
+}
+/* line 92, ../scss/parts/product/product.scss */
+#product #content-product .section .point .text-content.border-left {
+  padding-left: 33px;
+}
+/* line 95, ../scss/parts/product/product.scss */
+#product #content-product .section .point .text-content.border-left:before {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: #4acaff;
+  background: -moz-linear-gradient(top, #4acaff 0%, #0095d2 100%);
+  background: -webkit-linear-gradient(top, #4acaff 0%, #0095d2 100%);
+  background: linear-gradient(to bottom, #4acaff 0%, #0095d2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4acaff', endColorstr='#0095d2',GradientType=0 );
+}
 
 /* line 1, ../scss/parts/contact/contact.scss */
 #contact {
